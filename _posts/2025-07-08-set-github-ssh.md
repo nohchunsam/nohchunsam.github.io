@@ -90,13 +90,13 @@ Identity added: id_userB(userB@gmail.com)
 
 (화면은 내가 이미 설정해서 키가 있는 것! 처음 들어가는 사람들은 설정한 키가 없다고 뜰 것이다.)
 
-![](img\github_ssh_page.jpg)
+![](img/github_ssh_page.jpg)
 
 New SSH key 버튼을 눌러 키를 저장하자.
 
 커맨드 창에 ```cat id_userA.pub``` 를 치면 ssh 부터 시작하는 암호문이 뜰 것이다. ssh까지 끝까지 복사해 key창에 집어넣고 버튼을 누르자.
 
-![](img\add_ssh_page.png)
+![](img/add_ssh_page.png)
 
 ### 5. 레포지토리에 설정하기
 이제 아래 커맨드를 통해 잘 설정됐는지 확인할 수 있다!
