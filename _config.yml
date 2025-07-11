@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: 노춘삼
-  email: nohchunsam624@gmail.com # change to your email address
+  email: nochunsam624@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your Twitter homepage
@@ -61,7 +61,7 @@ analytics:
   google:
     id: G-HXEX2MGGJ4
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: nohchunsam # fill in your GoatCounter ID
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -75,7 +75,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: goatcounter # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #
