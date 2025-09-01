@@ -100,4 +100,4 @@ OR과 유사하지만, 모든 입력이 참이면 그 결과값은 거짓이 된
 
 회로를 나타낼 때 사용하는 기호다.
 
-![](img/boolean_gates.png)
+![](img/computer-architecture/boolean_gates.png)
