@@ -1,3 +1,10 @@
+---
+title: AnimatedList와 Dismissible
+date: 2025-07-25 12:10:00 +0900
+categories: Flutter
+tags: ["Flutter", "공부"]
+---
+
 챗지피티한테 리스트 아이템을 옆으로 밀어 삭제하는 위젯과 코드를 짜달라고 했다. 확인해보니 AnimatedList와 Dismissible을 함께 사용했다. 굳이 AnimatedList를 사용할 필요가 있나? 해서 확인해 봤는데, 둘 다 항목에 애니메이션을 적용한다는 건 같지만 AnimatedList가 좀 더 커스텀이 가능했다. 이렇게 알아보는 김에 두 위젯의 차이를 정리하려고 한다.
 
 ## AnimatedList
