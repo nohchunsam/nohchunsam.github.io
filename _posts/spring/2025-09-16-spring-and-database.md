@@ -109,27 +109,20 @@ public class Product {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getDescription() {
         return description;
     }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 }
 ```
+
+> 왜 생성자가 필요하지: `Java Reflection`이라고 구체적인 클래스 타입을 몰라도 클래스와 타입, 변수에 접근할 수 있게 해주는 API가 있다. JPA Entity는 리플렉션을 사용하는데, 문제는 리플렉션은 생성자의 인자 정보를 가져올 수 없게 된다. 이 때문에 기본 생성자(파라미터 없는 생성자)가 없으면 객체를 생성할 수 없게 된다! (물론 Hibernate 같은 종속성이 이런 문제를 회피하게 해준다만, 완벽한 해결책은 아니다.)
+
+
+> 왜 각 속성마다 getter이 필요하지: 외부에서 객체의 필드값을 읽기 위해서다. private로 캡슐화된 객체 내부를 직접 접근하지 않고 메서드를 통해 접근하게 된다.
 
 ## Repository - ProductRepository
 
@@ -187,3 +180,9 @@ Repository를 실행하고 API 응답을 리턴하기 위한 컨트롤러.
 이제 localhost:8080/product로 들어가면, 데이터베이스 테이블에 있는 데이터를 볼 수 있다.
 
 ![](img/spring_db_connect_sample.png)
+
+## 출처
+
+- https://scoring.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81-REST-Controller%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%EB%90%98%EB%8A%94-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98
+- https://1-7171771.tistory.com/123
+- https://danii0110.tistory.com/194
